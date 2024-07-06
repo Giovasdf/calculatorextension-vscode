@@ -31,7 +31,7 @@ This is a Minimalist calculator extension for Visual Studio Code, allowing users
 
 ## Issues
 
-If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/Giovasdf/Minimalist-calculator/issues) on GitHub.
+If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/Giovasdf/calculatorextension-vscode/issues) on GitHub.
 
 ---
 
