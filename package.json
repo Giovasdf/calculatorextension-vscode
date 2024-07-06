@@ -1,7 +1,7 @@
 {
-  "name": "calculator-extension",
+  "name": "simple-calculator",
   "publisher": "GiovanniMolina",
-  "displayName": "Calculator Extension",
+  "displayName": "Simple Calculator",
   "description": "A simple calculator extension for Visual Studio Code.",
   "version": "0.1.0",
   "engines": {
@@ -32,7 +32,7 @@
     "commands": [
       {
         "command": "simpleCalculator.calculate",
-        "title": "Calculator: Calculate"
+        "title": "Simple Calculator: Calculate"
       }
     ]
   },
