@@ -3,7 +3,7 @@
   "publisher": "GiovanniMolina",
   "displayName": "Minimalist Calculator",
   "description": "A Minimalist calculator extension for Visual Studio Code.",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "engines": {
     "vscode": "^1.58.0"
   },
@@ -37,7 +37,6 @@
     ]
   },
   "activationEvents": [
-    "onCommand:minimalistCalculator.calculate"
   ],
   "repository": {
     "type": "git",

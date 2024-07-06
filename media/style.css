@@ -1,0 +1,246 @@
+/* Estilo base común */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    background-image: url("../media/imges/dark-theme-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* Asegura que el fondo gradiente sea posicionado relativo a body */
+    overflow: hidden; /* Evita que el gradiente se extienda más allá del body */
+}
+
+/* Fondo gradiente para aplicar opacidad */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply; /* Mezcla el gradiente con la imagen de fondo */
+    z-index: -1; /* Coloca el gradiente detrás de todos los demás contenidos de body */
+}
+
+/* Estilos para el tema oscuro */
+body.dark-theme {
+    background-color: #1e1e1e; /* Color de fondo oscuro */
+}
+
+body.dark-theme {
+    background-image: url("../media/imges/dark-theme-bg.jpg");
+}
+
+/* Estilos para el tema claro */
+body.light-theme {
+    background-color: #fff; /* Color de fondo claro */
+}
+
+body.light-theme {
+    background-image: url("../media/imges/light-theme-bg.jpg");
+}
+
+/* Estilos para el tema blanco y negro */
+body.bw-theme {
+    background-color: #fff; /* Color de fondo blanco */
+}
+
+body.bw-theme {
+    background-image: url("../media/imges/bw-theme-bg.jpg");
+}
+
+
+.calculator {
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.calculator-display {
+    border-bottom: 1px solid #333;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    min-height: 60px;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.theme-btn {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-inline: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-calculator {
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-calculator.active {
+    background-color: #555 !important;
+}
+
+.btn-calculator:hover {
+    background-color: #555;
+}
+
+.btn-calculator.operator {
+    background-color: #f3a847;
+    color: #fff;
+}
+
+.btn-calculator.operator.active {
+    background-color: #e6953c !important;
+}
+
+.btn-calculator.operator:hover {
+    background-color: #e6953c;
+}
+
+.history {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.history-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-operation {
+    font-size: 1rem;
+    opacity: 0.8;
+    text-align: left;
+}
+
+.history-result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+.sticky-title {
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Estilos para el tema oscuro */
+body.dark-theme {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+body.dark-theme .calculator {
+    background-color: #2a2a2a;
+}
+
+body.dark-theme .calculator-display {
+    background-color: #3c3c3c;
+    color: #fff;
+}
+
+body.dark-theme .theme-btn {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-theme .btn-calculator {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-theme .history {
+    background-color: #1e1e1e;
+}
+
+/* Estilos para el tema claro */
+body.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-theme .calculator {
+    background-color: #f9f9f9;
+}
+
+body.light-theme .calculator-display {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-theme .theme-btn {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.light-theme .btn-calculator {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.light-theme .history {
+    background-color: #fff;
+}
+
+/* Estilos para el tema blanco y negro */
+body.bw-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+body.bw-theme .calculator {
+    background-color: #fff;
+}
+
+body.bw-theme .calculator-display {
+    background-color: #fff;
+    color: #000;
+}
+
+body.bw-theme .theme-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+body.bw-theme .btn-calculator {
+    background-color: #000;
+    color: #fff;
+}
+
+body.bw-theme .history {
+    background-color: #fff;
+}
