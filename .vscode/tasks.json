@@ -18,7 +18,7 @@
 		},
 		{
 			"type": "Live Preview",
-			"workspacePath": "/Users/giovannimolinagalleguillos/Documents/Repositorios/calculatorextension",
+			"workspacePath": "/Users/giovannimolinagalleguillos/Documents/Repositorios/simpleCalculator",
 			"problemMatcher": [],
 			"label": "Live Preview: Run Server"
 		}

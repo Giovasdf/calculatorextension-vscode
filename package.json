@@ -1,5 +1,6 @@
 {
   "name": "calculator-extension",
+  "publisher": "GiovanniMolina",
   "displayName": "Calculator Extension",
   "description": "A simple calculator extension for Visual Studio Code.",
   "version": "0.1.0",
@@ -14,33 +15,33 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "calculatorExtension",
+          "id": "simpleCalculator",
           "title": "Calculator",
           "icon": "media/icon.svg"
         }
       ]
     },
     "views": {
-      "calculatorExtension": [
+      "simpleCalculator": [
         {
-          "id": "calculatorExtension.view",
+          "id": "simpleCalculator.view",
           "name": "Calculator"
         }
       ]
     },
     "commands": [
       {
-        "command": "calculatorExtension.calculate",
+        "command": "simpleCalculator.calculate",
         "title": "Calculator: Calculate"
       }
     ]
   },
   "activationEvents": [
-    "onCommand:calculatorExtension.calculate"
+    "onCommand:simpleCalculator.calculate"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Giovasdf/calculatorextension-vscode.git"
+    "url": "https://github.com/Giovasdf/simpleCalculator-vscode.git"
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -70,7 +71,7 @@
     "url": "https://github.com/Giovasdf"
   },
   "bugs": {
-    "url": "https://github.com/Giovasdf/calculatorextension-vscode/issues"
+    "url": "https://github.com/Giovasdf/simpleCalculator-vscode/issues"
   },
-  "homepage": "https://github.com/Giovasdf/calculatorextension-vscode"
+  "homepage": "https://github.com/Giovasdf/simpleCalculator-vscode"
 }
