@@ -1,10 +1,10 @@
 {
-  "name": "simple-calculator",
-  "displayName": "Simple Calculator",
+  "name": "calculator-extension",
+  "displayName": "Calculator Extension",
   "description": "A simple calculator extension for Visual Studio Code.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
-    "vscode": "^1.91.0"
+    "vscode": "^1.58.0"
   },
   "categories": [
     "Other"
@@ -14,30 +14,34 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "simpleCalculator",
-          "title": "Simple Calculator",
+          "id": "calculatorExtension",
+          "title": "Calculator",
           "icon": "media/icon.svg"
         }
       ]
     },
     "views": {
-      "simpleCalculator": [
+      "calculatorExtension": [
         {
-          "id": "simpleCalculator.view",
-          "name": "Simple Calculator"
+          "id": "calculatorExtension.view",
+          "name": "Calculator"
         }
       ]
     },
     "commands": [
       {
-        "command": "simpleCalculator.calculate",
-        "title": "Simple Calculator: Calculate"
+        "command": "calculatorExtension.calculate",
+        "title": "Calculator: Calculate"
       }
     ]
   },
   "activationEvents": [
-    "onCommand:simpleCalculator.calculate"
+    "onCommand:calculatorExtension.calculate"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Giovasdf/calculatorextension-vscode.git"
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -47,14 +51,26 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.91.0",
-    "@types/mocha": "^10.0.7",
-    "@types/node": "20.x",
-    "@typescript-eslint/eslint-plugin": "^7.14.1",
-    "@typescript-eslint/parser": "^7.11.0",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
-    "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0"
-  }
+    "@types/vscode": "^1.58.0",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.32.0",
+    "typescript": "^4.4.4",
+    "vscode-test": "^1.6.0"
+  },
+  "keywords": [
+    "vscode",
+    "calculator",
+    "extension"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Giovanni Molina",
+    "email": "tuemail@example.com",
+    "url": "https://github.com/Giovasdf"
+  },
+  "bugs": {
+    "url": "https://github.com/Giovasdf/calculatorextension-vscode/issues"
+  },
+  "homepage": "https://github.com/Giovasdf/calculatorextension-vscode"
 }
