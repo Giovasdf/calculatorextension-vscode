@@ -1,8 +1,8 @@
-# Simple Calculator Extension for Visual Studio Code
+# Minimalist Calculator Extension for Visual Studio Code
 
 ## Overview
 
-This is a simple calculator extension for Visual Studio Code, allowing users to perform basic arithmetic operations conveniently within the editor.
+This is a Minimalist calculator extension for Visual Studio Code, allowing users to perform basic arithmetic operations conveniently within the editor.
 
 ## Features
 
@@ -14,7 +14,7 @@ This is a simple calculator extension for Visual Studio Code, allowing users to 
 
 1. Open Visual Studio Code.
 2. Go to the Extensions view (Ctrl+Shift+X).
-3. Search for "Simple Calculator".
+3. Search for "Minimalist Calculator".
 4. Click Install to install the extension.
 5. Reload Visual Studio Code to activate the extension.
 
@@ -31,7 +31,7 @@ This is a simple calculator extension for Visual Studio Code, allowing users to 
 
 ## Issues
 
-If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/your-username/simple-calculator/issues) on GitHub.
+If you encounter any issues or have suggestions for improvements, please [open an issue](https://github.com/your-username/Minimalist-calculator/issues) on GitHub.
 
 ---
 

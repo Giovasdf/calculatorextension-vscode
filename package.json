@@ -1,8 +1,8 @@
 {
-  "name": "simple-calculator",
+  "name": "minimalist-calculator",
   "publisher": "GiovanniMolina",
-  "displayName": "Simple Calculator",
-  "description": "A simple calculator extension for Visual Studio Code.",
+  "displayName": "Minimalist Calculator",
+  "description": "A Minimalist calculator extension for Visual Studio Code.",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.58.0"
@@ -15,33 +15,33 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "simpleCalculator",
+          "id": "minimalistCalculator",
           "title": "Calculator",
           "icon": "media/icon.svg"
         }
       ]
     },
     "views": {
-      "simpleCalculator": [
+      "minimalistCalculator": [
         {
-          "id": "simpleCalculator.view",
+          "id": "minimalistCalculator.view",
           "name": "Calculator"
         }
       ]
     },
     "commands": [
       {
-        "command": "simpleCalculator.calculate",
-        "title": "Simple Calculator: Calculate"
+        "command": "minimalistCalculator.calculate",
+        "title": "Minimalist Calculator: Calculate"
       }
     ]
   },
   "activationEvents": [
-    "onCommand:simpleCalculator.calculate"
+    "onCommand:minimalistCalculator.calculate"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Giovasdf/simpleCalculator-vscode.git"
+    "url": "https://github.com/Giovasdf/minimalistCalculator-vscode.git"
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -71,7 +71,7 @@
     "url": "https://github.com/Giovasdf"
   },
   "bugs": {
-    "url": "https://github.com/Giovasdf/simpleCalculator-vscode/issues"
+    "url": "https://github.com/Giovasdf/minimalistCalculator-vscode/issues"
   },
-  "homepage": "https://github.com/Giovasdf/simpleCalculator-vscode"
+  "homepage": "https://github.com/Giovasdf/minimalistCalculator-vscode"
 }

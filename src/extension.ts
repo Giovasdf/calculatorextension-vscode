@@ -3,10 +3,10 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 export function activate(context: vscode.ExtensionContext) {
-    let disposable = vscode.commands.registerCommand('simpleCalculator.calculate', async () => {
+    let disposable = vscode.commands.registerCommand('minimalistCalculator.calculate', async () => {
         const panel = vscode.window.createWebviewPanel(
             'calculator',
-            'Simple Calculator',  // Cambia el título del panel webview
+            'Minimalist Calculator',  // Cambia el título del panel webview
             vscode.ViewColumn.Beside,
             {
                 enableScripts: true
