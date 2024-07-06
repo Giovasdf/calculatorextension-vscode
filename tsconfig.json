@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "commonjs", // Utiliza commonjs para compatibilidad con Node.js y VSCode
+		"target": "es2022", // Utiliza es2022 como target para ES2022
+		"outDir": "out", // Directorio de salida para los archivos compilados
+		"rootDir": "src", // Directorio raíz de los archivos fuente
+		"strict": true, // Habilita todas las opciones de comprobación estricta de tipos
+		"esModuleInterop": true, // Permite la interoperabilidad de módulos ES6/ES2015
+		"resolveJsonModule": true, // Permite la importación de archivos JSON como módulos
+		"sourceMap": true // Genera archivos de mapa de origen para depuración
+	},
+	"include": [
+		"src/**/*.ts" // Incluye todos los archivos TypeScript bajo src
+	],
+	"exclude": [
+		"node_modules", // Excluye la carpeta node_modules
+		".vscode-test" // Excluye la carpeta .vscode-test si existe
+	]
+}
